@@ -1,13 +1,15 @@
-const { sequelize } = require('./db');
+const  sequelize  = require('./sequelize.js');
 const { Cheese } = require('./cheese.js');
 const { Board } = require('./board.js');
 const { User } = require('./user.js')
-const { DESCRIBE } = require('sequelize/types/query-types');
+
+// const { DESCRIBE } = require('sequelize/types/query-types');
 
 describe('Checking models are working', () => {
     beforeAll(async () => {
         await sequelize.sync({force: true});
 })
+
 
 test('Checking Cheese model is working', () =>{ 
     async() => {
