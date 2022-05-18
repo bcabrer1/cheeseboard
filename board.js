@@ -1,4 +1,4 @@
-//We require in sequeilze.js filew which is a model or a table
+//We require in sequeilze which is the bridge from js to database
 const { Sequelize } = require("sequelize");
 const sequelize = require("./sequelize");
 const board = sequelize.define('board', {

@@ -1,4 +1,5 @@
-const  sequelize  = require('./sequelize.js');
+//sequlize or the variable name should be wihout brackets
+const  sequelize   = require('./sequelize.js');
 const { Cheese } = require('./cheese.js');
 const { Board } = require('./board.js');
 const { User } = require('./user.js')
